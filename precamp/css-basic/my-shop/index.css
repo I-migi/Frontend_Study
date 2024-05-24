@@ -1,0 +1,294 @@
+*{  
+  box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.itemWrap{
+  margin: 20px;
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+ 
+}
+
+.item{
+  width: calc(25% - 7px);
+  aspect-ratio: 6 / 5;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.imgBox{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.imgBox img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textBox{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+  z-index: 3;
+}
+
+.textBox p{
+  color: white;
+  margin: 5px 0 0;
+}
+
+.textBox__name{
+  font-size: 22px;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.textBox__price{
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.item:after{
+  content: "";
+  display: block;
+  background-color: rgba(0,0,0,0.2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+}
+
+.item:hover:after{
+  opacity: 1;
+}
+
+.item:hover .imgBox img{
+  transform: scale(1.1);
+  filter: blur(3px);
+}
+
+.item:hover .textBox__name{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.item:hover .textBox__price{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.item:after,
+.item .imgBox img,
+.item .textBox__name,
+.item .textBox__price {
+  transition: all 0.4s ease-in-out ;
+}
+
+.item .textBox__price {
+  transition: all 0.4s ease-in-out 0.15s;
+}
+
+
+.mainBanner{
+  width: 100%;
+  height: 280px;
+  background-image: url(./img/banner.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.text{
+  font-size: 42px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3 );
+  animation: titleText 1s ease-in-out;
+}
+
+@keyframes titleText{
+
+  0%{
+    transform: translateY(70px);
+    opacity: 0;
+  }
+  92%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.sub__banner{
+  margin-top: 10px;
+  width: 12%;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.sub__banner ul{
+  background-color: orange;
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: flex-start;
+  list-style: none;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 10px;
+}
+
+.sub__banner li {
+  border: 1px solid orange;
+  border-radius: 5px;
+  height: 15%;
+  width: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  
+}
+
+.subsub {
+  background-color: black;
+  color: white;
+  width: 100%;
+  margin-left: 10px;
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.sub__banner li:hover {
+  transform:translateX(10px);
+  border-radius: 20px;
+  background-color: darkorange;
+  transition: all 0.4s ease-in-out ;
+}
+
+.confirm{
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 10px;
+}
+
+.confirm span{
+  margin-left: 10px;
+}
+
+
+
+.confirm:hover .con{
+  transform: translateX(20px);
+  transition: all 0.4s ease-in-out;
+}
+
+.confirm:hover {
+  color: black;
+  
+}
+.sub__banner ul a:visited{
+  color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+.confirm:hover {
+  background: white;
+ 
+  border: 1px solid  black;
+  transition: all 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  .mainBanner{
+    height: 160px;
+  }
+  .mainBanner .text{
+    font-size: 26px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sub__banner{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .sub__banner ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 0;
+  }
+  .confirm{
+    display: none;
+  }
+  
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+}

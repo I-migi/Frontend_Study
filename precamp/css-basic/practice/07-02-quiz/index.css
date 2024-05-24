@@ -1,0 +1,25 @@
+*{
+  box-sizing: border-box;
+}
+
+.target{
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 255,0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid blue;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.target span{
+  color: white;
+}
+
+.target4{
+  transform: scaleY(0.75) skewX(20deg);
+}

@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.full1{
+  border: 1px solid black;
+  width: 540px;
+  height: 960px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:flex-start;
+}
+
+.full2{
+
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.title{
+  color: blue;
+  
+}
+
+.inform{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.email {
+  width: 380px;
+  height: 60px;
+  border-radius: 10px;
+  border-color: blue;
+  margin: 10px;
+}
+
+.name {
+ width: 380px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.pw1 {
+ width: 380px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.pw2 {
+ width: 380px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.tp1, .tp2, .tp3{
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.ch1, .ch2{
+  width: 120px;
+  height: 40px;
+border-radius: 8px;
+}
+
+.ch1{
+  background-color: white;
+  
+}
+
+.ch2{
+  background-color: aqua;
+  
+}
+
+.sl{
+  border-bottom: 1px solid black;
+  width: 380px;
+}
+
+.finish{
+  background-color: white;
+  width: 380px;
+  height: 75px;
+  
+  
+}

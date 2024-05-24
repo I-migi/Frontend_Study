@@ -1,0 +1,46 @@
+// Math.floor(Math.random() *1000000)
+// 492279
+// String(Math.floor(Math.random() *1000000))
+// '789891'
+// String(Math.floor(Math.random() *1000000))
+// '502072'
+// String(Math.floor(Math.random() *1000000))
+// '489618'
+// String(Math.floor(Math.random() *1000000))
+// '85388'
+// String(Math.floor(Math.random() *1000000))
+// '958670'
+// String(Math.floor(Math.random() *1000000))
+// '524951'
+// String(Math.floor(Math.random() *1000000))
+// '672791'
+// String(Math.floor(Math.random() *1000000)).padStart(6,"0")
+// '839927'
+// String(Math.floor(Math.random() *1000000)).padStart(6,"0")
+// '583857'
+// String(Math.floor(Math.random() *1000000)).padStart(6,"0")
+// '613681'
+// String(Math.floor(Math.random() *1000000)).padStart(6,"0")
+// '406747'
+// String(Math.floor(Math.random() *1000000)).padStart(6,"0")
+// '221870'
+// String(Math.floor(Math.random() *1000000)).padStart(6,"0")
+// '467603'
+// String(Math.floor(Math.random() *1000000)).padStart(6,"0")
+// '657451'
+// String(Math.floor(Math.random() *1000000)).padStart(6,"0")String(Math.floor(Math.random() *1000000)).padStart(6,"0")
+// VM5314:1 Uncaught SyntaxError: Unexpected identifier 'String'
+// String(Math.floor(Math.random() *1000000)).padStart(6,"0")
+// '602605'
+// String(Math.floor(Math.random() *1000000)).padStart(6,"0")
+// '521126'
+// String(Math.floor(Math.random() *1000000)).padStart(6,"0")
+// '984016'
+// let result =String(Math.floor(Math.random() *1000000)).padStart(6,"0")
+// undefined
+// result
+// '116777'
+// result
+// '116777'
+// result
+// '116777'

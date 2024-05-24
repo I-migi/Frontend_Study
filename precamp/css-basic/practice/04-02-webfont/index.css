@@ -1,0 +1,11 @@
+*{
+  box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap'); 
+
+div {
+  font-family: 'East Sea Dokdo', cursive;
+  font-size: 40px;
+}
